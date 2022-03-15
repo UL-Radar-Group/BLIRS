@@ -1,7 +1,7 @@
 Blender Infrared and Radar Simulator (BLIRS)
 ============================================
 
-This is cloned from https://www.iss.uni-stuttgart.de/download/blender-radar/Simulation.zip and is based on the published work for this article:
+This is a fork of the original Github [repository](https://github.com/UL-Radar-Group/BLIRS) which is cloned from https://www.iss.uni-stuttgart.de/download/blender-radar/Simulation.zip and is based on the published work for this article:
 
 Monika Ouza, Michael Ulrich and Bin Yang  
 A Simple Radar Simulation Tool for 3D Objects based on Blender  
@@ -37,3 +37,9 @@ and select "simulate_materials.py". Then click the "Install from File..." button
 - Test if everything is wokring by pressing CTR+SHIFT+M.  
 A new window "Material Toolbox" should pop-up that can be closed with ESC.
 - Start Matlab and open Blirs\simulation_main.m
+
+Install instructions for Ubuntu 20.04
+===================================
+- Clone this repository and the openexr-matlab submodule
+- Follow instructions in [Manual.pdf](Manual.pdf)
+- There was a linking error when using Matlab R2020b which does not appear when using Matlab 2021b or 2022a

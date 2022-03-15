@@ -1,1 +1,10 @@
-openexr-matlab-master/
+blender*/
+
+Camerapath.py
+
+*.asv
+
+*.exr
+*.avi
+*.hdr
+*.mat

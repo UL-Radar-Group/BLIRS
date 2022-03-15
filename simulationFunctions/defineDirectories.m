@@ -13,7 +13,13 @@ function [ directories ] = defineDirectories(  )
 
 
 % Enter here the path for the blend File to Render
-directories.blendfilepath = fullfile(pwd,'Blend_File', 'scene_ir.blend') ;
+directories.blendfilepath = fullfile(pwd,'Blend_File', 'scene.blend') ;
+
+% Define the Name for the Rendered outputs
+directories.filename_radar = 'scene_radar_test';
+
+% Define the Name for the Rendered outputs
+directories.filename_ir = 'scene_ir_test';
 
 % Enter here the Path for the Python script simulate_radar.py to create the
 % radar Renders
@@ -33,22 +39,16 @@ directories.outputfile_ir = fullfile(pwd,'Infrared_Renders',filesep) ;
 
 % Enter here the output file Path to put the Radar .mat
 % Files: 'Exr_to_mat_files'
-directories.radarmatfiles = fullfile(pwd,'Exr_to_mat_files') ;
-
-% Define the Name for the Rendered outputs
-directories.filename_radar = 'room_radar_test';
-
-% Define the Name for the Rendered outputs
-directories.filename_ir = 'room_ir_test';
+directories.radarmatfiles = fullfile(pwd,'Exr_to_mat_files',filesep) ;
 
 %Path to open the Blender app from Terminal (for Linux 'blender' if blender
 %is downloaded in the default path
-directories.Blender_path = '.\blender-2.77-windows64\blender.exe';
+directories.Blender_path = './blender-2.77-linux-glibc211-x86_64/blender';
 
 
 % Enter the Path for the folder to save the Simulation results:
 % 'simulationResuts'
-directories.results = fullfile(pwd,'simulationResults');
+directories.results = fullfile(pwd,'simulationResults',filesep);
 
 end
 

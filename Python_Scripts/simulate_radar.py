@@ -1,7 +1,7 @@
 import bpy
 
 # Path of the Blend File
-blendfilepath = '/Users/monikamarkos/Desktop/Synchronized_Simulation_new_2/Blend_File/room.blend'
+blendfilepath = '/home/johann/Work/Masters_Project/blirs/Blend_File/scene.blend'
 # Open the Blend File
 bpy.ops.wm.open_mainfile(filepath=blendfilepath)
 
@@ -34,9 +34,9 @@ fps = 1
 # The output Format for the Radar Images output is OPEN_EXR
 scene.render.image_settings.file_format = 'OPEN_EXR'
 # The output File to put the rendered Radar Image
-outputfile = '/Users/monikamarkos/Desktop/Synchronized_Simulation_new_2/Radar_Renders/'
+outputfile = '/home/johann/Work/Masters_Project/blirs/Radar_Renders/'
 # Name of the Images
-filename = 'room_radar_test'
+filename = 'scene_radar_test'
 
 
 scene.render.filepath = "/tmp/"

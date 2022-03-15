@@ -1,7 +1,7 @@
 import bpy
 
 # The bend File to be rendered
-blendfilepath = '/Users/monikamarkos/Desktop/Synchronized_Simulation_new_2/Blend_File/room.blend'
+blendfilepath = '/home/johann/Work/Masters_Project/blirs/Blend_File/scene.blend'
 # open the blend File
 bpy.ops.wm.open_mainfile(filepath=blendfilepath)
 
@@ -21,8 +21,8 @@ bpy.ops.object.change_materials(change_to_radar = False, change_to_ir = True)
 scene = bpy.context.scene
 
 # The resolution of the output
-ir_resolution_x = 100
-ir_resolution_y = 100
+ir_resolution_x = 500
+ir_resolution_y = 500
 scene.render.resolution_x = ir_resolution_x
 scene.render.resolution_y = ir_resolution_y
 scene.render.resolution_percentage = 100
@@ -38,9 +38,9 @@ fps = 1
 scene.render.image_settings.file_format = 'HDR'
 
 # Output File Path
-outputfile = '/Users/monikamarkos/Desktop/Synchronized_Simulation_new_2/Infrared_Renders/'
+outputfile = '/home/johann/Work/Masters_Project/blirs/Infrared_Renders/'
 # Name of the Output Files
-filename = 'room_ir_test'
+filename = 'scene_ir_test'
 scene.render.filepath = outputfile + filename
 
 #Set the Camera Focallength

@@ -17,7 +17,7 @@ fps = camera.fps ;
 doPlot=false; 
 
 % add exrread to path
-addpath('openexr-matlab-master')
+addpath('openexr-matlab')
 
 for i=1:camera.numofFrames
 if i<10
