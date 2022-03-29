@@ -11,15 +11,17 @@ function [ directories ] = defineDirectories(  )
 % - filename_ir       := name for the infrared renders
 % - results           := Path for the Folder 'Simulation Results'
 
+% Name of blender model file without extension
+file_name = 'single_reflector';
 
 % Enter here the path for the blend File to Render
-directories.blendfilepath = fullfile(pwd,'Blend_File', 'scene.blend') ;
+directories.blendfilepath = fullfile(pwd,'Blend_File', append(file_name, '.blend'));
 
 % Define the Name for the Rendered outputs
-directories.filename_radar = 'scene_radar_test';
+directories.filename_radar = append(file_name, '_radar_test');
 
 % Define the Name for the Rendered outputs
-directories.filename_ir = 'scene_ir_test';
+directories.filename_ir = append(file_name, '_ir_test');
 
 % Enter here the Path for the Python script simulate_radar.py to create the
 % radar Renders

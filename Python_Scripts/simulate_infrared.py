@@ -1,7 +1,7 @@
 import bpy
 
 # The bend File to be rendered
-blendfilepath = '/home/johann/Work/Masters_Project/blirs/Blend_File/scene.blend'
+blendfilepath = '/home/johann/Work/Masters_Project/blirs/Blend_File/single_reflector.blend'
 # open the blend File
 bpy.ops.wm.open_mainfile(filepath=blendfilepath)
 
@@ -40,7 +40,7 @@ scene.render.image_settings.file_format = 'HDR'
 # Output File Path
 outputfile = '/home/johann/Work/Masters_Project/blirs/Infrared_Renders/'
 # Name of the Output Files
-filename = 'scene_ir_test'
+filename = 'single_reflector_ir_test'
 scene.render.filepath = outputfile + filename
 
 #Set the Camera Focallength
