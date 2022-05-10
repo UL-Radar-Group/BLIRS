@@ -1,5 +1,7 @@
 blender*/
 
+*.blend1
+
 Camerapath.py
 
 *.asv

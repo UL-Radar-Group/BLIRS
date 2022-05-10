@@ -20,11 +20,11 @@ camera.ir_numPx_x = 500;
 % Set the vertical Number of Pixels for the ir Image
 camera.ir_numPx_y = 500;
 % Define the Number of Frames of the Simulation
-camera.numofFrames = 2;
+camera.numofFrames = 1;
 % Define the Frame Rate Per Second
 camera.fps = 1;
 %Define the scale from Blender units to meters
-camera.scale = 10; % 10 BU (Blender Units) = 1 meters
+camera.scale = 1; % 1 BU (Blender Units) = 1 meters
 % Define the focal length of the Camera
 camera.focalLen = 16;    %mm
 % Define the Width of the Camera

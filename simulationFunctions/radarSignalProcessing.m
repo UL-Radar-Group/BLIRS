@@ -1,13 +1,14 @@
 function [ targetList ] = radarSignalProcessing( rawData,radarParameters )
-%RADARSIGNALPROCESSING: Signal Processing of the Radar Signal to get the
-%output as a dected target list with estimated range, velocity and DOA
+% RADARSIGNALPROCESSING: Signal Processing of the Radar Signal to get the
+% output as a detected target list with estimated range, velocity and DOA
 % - radarData         := The radar simulated Signal
 % - radarParameters   := The defined Radar Modulation Parameters 
-% - targetList        := The detected Target List
+% - targetList        := The detected target list
 %                        - col1: estimated range
 %                        - col2: estimated velocity
-%                        - col3: estimated azimuth
-%                        - col4: estimated elevation
+%                        - col3: estimated amplitude
+%                        - col4: estimated azimuth
+%                        - col5: estimated elevation
 %% Defs
 % CFAR Definition
 numTrainingCells=10;

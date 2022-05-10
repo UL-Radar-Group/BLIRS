@@ -1,7 +1,7 @@
 import bpy
 
 # Path of the Blend File
-blendfilepath = '/home/johann/Work/Masters_Project/blirs/Blend_File/single_reflector.blend'
+blendfilepath = '/home/johann/Work/Masters_Project/blirs/Blend_File/two_reflector.blend'
 # Open the Blend File
 bpy.ops.wm.open_mainfile(filepath=blendfilepath)
 
@@ -27,7 +27,7 @@ scene.render.resolution_y = radar_resolution_y
 scene.render.resolution_percentage = 100
 
 # Set the Number of Frames
-numofFrames = 2
+numofFrames = 1
 # Set the Frame Rate per Second
 fps = 1
 
@@ -36,7 +36,7 @@ scene.render.image_settings.file_format = 'OPEN_EXR'
 # The output File to put the rendered Radar Image
 outputfile = '/home/johann/Work/Masters_Project/blirs/Radar_Renders/'
 # Name of the Images
-filename = 'single_reflector_radar_test'
+filename = 'two_reflector_radar_test'
 
 
 scene.render.filepath = "/tmp/"

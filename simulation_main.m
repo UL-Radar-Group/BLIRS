@@ -36,4 +36,3 @@ for i=1:camera.numofFrames
 end
 disp('Radar Simulation Finished')
 
-
