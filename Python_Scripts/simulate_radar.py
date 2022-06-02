@@ -1,7 +1,7 @@
 import bpy
 
 # Path of the Blend File
-blendfilepath = '/home/johann/Work/Masters_Project/blirs/Blend_File/two_reflector.blend'
+blendfilepath = '/home/johann/Work/Masters_Project/blirs/Blend_File/Echo_chamber.blend'
 # Open the Blend File
 bpy.ops.wm.open_mainfile(filepath=blendfilepath)
 
@@ -36,7 +36,7 @@ scene.render.image_settings.file_format = 'OPEN_EXR'
 # The output File to put the rendered Radar Image
 outputfile = '/home/johann/Work/Masters_Project/blirs/Radar_Renders/'
 # Name of the Images
-filename = 'two_reflector_radar_test'
+filename = 'Echo_chamber_radar_test'
 
 
 scene.render.filepath = "/tmp/"

@@ -15,7 +15,7 @@ radarParameters = defineRadar(camera);
 % Radar
 renderRadar(directories,camera);
 % Infrared
-renderIR(directories,camera);
+%renderIR(directories,camera);
 
 %% Load Blender Renders and convert to matlab format
 % convert exr files of Blender to mat files
@@ -26,7 +26,7 @@ camPos=loadCameraPath(directories,camera);
 
 %% Create the simulation output
 % Infrared:
-createVideo(directories,camera);
+%createVideo(directories,camera);
 % Radar:
 for i=1:camera.numofFrames
     fileName=[directories.radarmatfiles,directories.filename_radar,num2str(i)];

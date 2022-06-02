@@ -12,7 +12,7 @@ function [ directories ] = defineDirectories(  )
 % - results           := Path for the Folder 'Simulation Results'
 
 % Name of blender model file without extension
-file_name = 'two_reflector';
+file_name = 'Echo_chamber';
 
 % Enter here the path for the blend File to Render
 directories.blendfilepath = fullfile(pwd,'Blend_File', append(file_name, '.blend'));
